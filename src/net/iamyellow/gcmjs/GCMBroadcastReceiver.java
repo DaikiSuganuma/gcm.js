@@ -31,7 +31,9 @@ public class GCMBroadcastReceiver extends android.support.v4.content.WakefulBroa
 			GCMIntentService.class.getName());
 
 		startWakefulService(context, (intent.setComponent(comp)));
-		setResultCode(Activity.RESULT_OK);
+
+		// @see http://stackoverflow.com/questions/23835970/broadcastreceiver-trying-to-return-result-during-a-non-ordered-broadcast-packa
+		//setResultCode(Activity.RESULT_OK);
 	}
 
 }
