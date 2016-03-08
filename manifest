@@ -15,5 +15,5 @@ name: gcmjs
 moduleid: net.iamyellow.gcmjs
 guid: 
 platform: android
-minsdk: 3.5.1.GA
+minsdk: 5.1.2.GA
 architectures: armeabi armeabi-v7a x86
